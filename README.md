@@ -1,67 +1,70 @@
-# Pediatric Pneumonia Classification Using CNN on Chest X-Rays
+# Pneumonia Detection with CNN
 
-## Overview
-Pneumonia is a serious lung infection that is a leading cause of illness and death in children worldwide. This project leverages **Convolutional Neural Networks (CNNs)** to develop an automated classification system for detecting pneumonia using pediatric chest X-ray images. The goal is to provide an **accurate, accessible, and efficient** diagnostic tool to aid healthcare professionals.
+This project focuses on pneumonia detection using a Convolutional Neural Network (CNN) implemented from scratch. The CNN is trained on a dataset of medical chest X-ray images for accurate and early diagnosis of pneumonia.
 
-## Features
-- ✅ **Preprocessed Chest X-ray Dataset** (Normalization & Augmentation)
-- ✅ **CNN Architectures** (VGG16, ResNet, EfficientNet)
-- ✅ **Transfer Learning & Hyperparameter Optimization**
-- ✅ **Performance Evaluation** (Accuracy, Precision, Recall, AUC-ROC)
-- ✅ **Streamlit Web App** for Real-Time X-ray Classification
+
+## Project Overview
+
+- **Objective:** Implement a CNN for pneumonia detection using medical chest X-ray images.
+- **Architecture:** Convolutional Neural Network (CNN).
+- **Programming Language:** Python.
+- **Framework:** TensorFlow and Keras.
 
 ## Dataset
-- The dataset used in this project consists of **pediatric chest X-ray images** labeled as **Normal** or **Pneumonia**.
-- Due to size constraints, the dataset is not included in this repository. It can be downloaded from **[Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)**.
 
-## Project Structure
-```
-Pediatric-Pneumonia-CNN/
-│── data/                  # Dataset (not included due to size)
-│── notebooks/             # Jupyter notebooks for EDA, training, and evaluation
-│── models/                # Trained CNN models
-│── app/                   # Streamlit-based web app
-│── requirements.txt       # Dependencies
-│── README.md              # Project documentation
-```
+The dataset consists of medical chest X-ray images categorized into two classes:
 
-## Installation & Usage
+1. **Normal:** Chest X-rays from patients without pneumonia.
+2. **Pneumonia:** Chest X-rays from patients with pneumonia.
 
-### 1. Clone the Repository
+## Prerequisites
+
+Make sure to have the following dependencies installed:
+
 ```bash
-git clone https://github.com/your-username/Pediatric-Pneumonia-CNN.git
-cd Pediatric-Pneumonia-CNN
+pip install tensorflow matplotlib
 ```
 
-### 2. Install Dependencies
+## Usage
+
+1. Clone the repository:
+
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/your-username/pneumonia-detection-cnn.git
 ```
 
-### 3. Run the Web App
+2. Navigate to the project directory:
+
 ```bash
-streamlit run app/app.py
+cd pneumonia-detection-cnn
 ```
 
-### 4. Upload a chest X-ray image
-The web app will process the image and provide a classification result (**Normal** or **Pneumonia**).
+3. Run the Jupyter notebook or Python script:
 
-## Model Performance
-- Trained **CNN-based models** achieved **high classification accuracy**.
-- Performance evaluated using **precision, recall, F1-score, and AUC-ROC**.
-- Error analysis conducted to improve predictions.
+```bash
+jupyter notebook pneumonia_detection.ipynb
+```
 
-## Future Enhancements
-- 📌 Expand dataset for better generalization.
-- 📌 Integrate explainability techniques (e.g., **Grad-CAM**) for model transparency.
-- 📌 Deploy as a **cloud-based API** for wider accessibility.
+or
 
-## Contributing
-🚀 **Contributions are welcome!** Feel free to fork the repo, submit pull requests, or suggest improvements.
+```bash
+python pneumonia_detection.py
+```
+
+4. Follow the instructions in the notebook or script to train and test the CNN model.
+
+## Results
+
+After training, the CNN demonstrates its ability to accurately classify chest X-ray images, aiding in the early detection of pneumonia. Results and visualizations are presented in the notebook or script.
+
+## Acknowledgments
+
+This project is motivated by the importance of leveraging CNNs for medical image analysis, particularly in the early diagnosis of pneumonia.
 
 ## License
-This project is licensed under the **MIT License**.
 
----
-**🌟 If you find this project useful, don't forget to star the repository!** ⭐
-# Pediatric-Pneumonia-Classification-with-Convolutional-Neural-Networks-Models-on-Chest-X-Rays
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details." > README.md
+
+## Demo
+
+[streamlit-app-2024-02-07-13-02-03.webm](https://github.com/figo2001/Pneumonia-Detection-using-CNN/assets/78696850/f53fe2d8-2ca1-4ce8-8ade-fdccd658ab3a)
